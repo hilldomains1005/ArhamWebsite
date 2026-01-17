@@ -6,9 +6,6 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'sonner';
 
-const BACKEND_URL = '';
-const API = `${BACKEND_URL}/api`;
-
 const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -27,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post(`${API}/contact`, formData);
+      await axios.post(`/functions/contact`, formData);
       toast.success('Message sent successfully! We will get back to you soon.');
       setFormData({
         first_name: '',
@@ -38,7 +35,7 @@ const Contact = () => {
       });
     } catch (error) {
       console.error(error);
-      toast.error('Failed to send message. Please try again.');
+      toast.error('Failed to send message. Please try again or mail on info@arhamexp.com.');
     } finally {
       setLoading(false);
     }
