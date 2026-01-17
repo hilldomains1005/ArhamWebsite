@@ -24,7 +24,11 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post(`/functions/contact`, formData);
+      await fetch("/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
       toast.success('Message sent successfully! We will get back to you soon.');
       setFormData({
         first_name: '',
