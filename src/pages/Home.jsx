@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, TrendingUp, Users, Globe, Package } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Globe, Package, Tablet, Tablets, ShieldCheck, Pill } from 'lucide-react';
 import { companyInfo } from '../mock';
 import Hero3D from '../components/Hero3D';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen md:pt-0 pt-20">
+    <div className="flex flex-col min-h-screen md:pt-0 pt-10">
       {/* Hero Section */}
       <section className="relative w-full h-screen bg-gradient-to-br from-gray-50 to-gray-200 overflow-hidden flex items-center">
         {/* 3D Background */}
@@ -22,8 +22,8 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
-                Connecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600">Global</span><br />
-                Healthcare
+                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600">Pharmaceutical, Food and Chemical</span><br />
+                Distribution Partner
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
                 {companyInfo.description}
@@ -43,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {companyInfo.stats.map((stat, index) => (
@@ -65,7 +65,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Brief Intro / Features */}
       <section className="py-24 bg-gray-50 relative overflow-hidden">
@@ -77,24 +77,25 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Arham Exports?</h2>
-            <p className="text-gray-600">We deliver quality, consistency, and reliability across borders.</p>
+            <p className="text-gray-600">Arham Exports does much more than move goods. We move markets forward. Breaking new ground through our technical expertise with ideas and creating opportunities through innovation.</p>
+            <Link to="/about" className="text-teal-600 hover:text-purple-600 transition-colors text-sm">Learn More About Us</Link>          
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={<Globe className="w-8 h-8 text-teal-500" />}
-              title="Global Reach"
-              desc="Exporting to over 50 countries with established supply chain networks."
+              icon={<Package className="w-8 h-8 text-teal-500" />}
+              title="Raw Material Outsourcing"
+              desc="Arham Exports is the most reliable, efficient, and cost-effective partner to cater to all your raw material outsourcing needs."
             />
-             <FeatureCard 
-              icon={<Package className="w-8 h-8 text-purple-500" />}
-              title="Premium Quality"
-              desc="Sourcing only from WHO-GMP approved manufacturing facilities."
+            <FeatureCard 
+              icon={<Pill className="w-8 h-8 text-purple-500" />}
+              title="Tailored Services"
+              desc="Arham Exports provides tailored outsourcing solutions to the Pharmaceutical and Food Supplement industries and meets their diverse needs."
             />
-             <FeatureCard 
-              icon={<TrendingUp className="w-8 h-8 text-orange-500" />}
-              title="Consistent Growth"
-              desc="25+ years of continuous growth and market expansion."
+            <FeatureCard 
+              icon={<ShieldCheck className="w-8 h-8 text-orange-500" />}
+              title="Quality Assurance"
+              desc="Our in-house quality assurance team makes relentless efforts to conduct thorough regular checks and audits of our suppliers, to ensure that the raw materials we source are of top quality and exact reliability that our clients expect from us."
             />
           </div>
         </div>

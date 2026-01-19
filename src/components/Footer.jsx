@@ -12,10 +12,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold tracking-tight">
-              <span className="text-teal-400">Arham</span> Exports
+              <span className="bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text text-transparent">Arham Exports</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Connecting global healthcare with premium quality pharmaceutical and chemical exports. Bridging gaps, ensuring quality, and delivering excellence worldwide.
+              A bridge between Indian producers and local industries, facilitating innovation and development by supplying essential Pharmaceutical, Food and Chemical products to the markets that need them most.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors"><Facebook size={20} /></a>

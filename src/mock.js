@@ -1,10 +1,10 @@
 
 export const companyInfo = {
   name: "Arham Exports",
-  tagline: "Connecting Global Healthcare",
-  description: "Arham Exports is a leading pharmaceutical and chemical export house dedicated to bridging the gap between quality manufacturers and global healthcare needs. With over two decades of experience, we specialize in sourcing and supplying high-grade APIs, excipients, and industrial chemicals to over 50 countries.",
+  tagline: "The Pharmaceutical, Food and Chemical Distribution Partner",
+  description: "Arham Exports is a bridge between Indian producers and local industries, facilitating innovation and development by supplying essential Pharmaceutical, Food and Chemical products to the markets that need them most.",
   aboutUsDescription: `
-    <p>We at Arham Exports aim to become <b>the Pharmaceutical, Food and chemical distribution partner of choice</b> for manufacturers all over the India. Our customers’ interests and reputations are our highest priority. We work to protect them by our own continuous improvement.</p><br/>
+    <p>We at Arham Exports aim to become <b>the Pharmaceutical, Food and Chemical distribution partner of choice</b> for manufacturers all over the India. Our customers’ interests and reputations are our highest priority. We work to protect them by our own continuous improvement.</p><br/>
     <p>We continually work to identify new products and sources as part of our commitment to bring <b>innovation</b> to our entire customer network. We give flexibility, reliability and professionalism needed to fuel growth and market expansion.</p><br/>
     <p>As trusted chemical distributors, we represent renowned Indian manufacturers, extending their reach and ensuring local markets have access to the high-quality materials they deserve.</p><br/>
     <p><b>We are the bridge between Indian producers and local industries, facilitating innovation and development by supplying essential Pharmaceutical, Food and chemical products to the markets that need them most.</b></p><br/>

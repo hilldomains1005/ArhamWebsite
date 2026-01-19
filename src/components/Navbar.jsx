@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link to="/" className="flex-shrink-0 flex items-center gap-2">
             <img src="/Logos/Arham_Logo_Without_Text.png" alt="Arham Exports Logo" className="h-12" />
             <div className="font-bold text-3xl tracking-tighter text-gray-900 flex items-center gap-1">
-              <span className="text-teal-600">Arham</span><span className="text-purple-600">Exports</span>
+              <span className="bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text px-2 text-transparent">Arham Exports</span>
             </div>
           </Link>
 
