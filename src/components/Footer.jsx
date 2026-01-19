@@ -30,7 +30,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Quick Links</h4>
             <ul className="space-y-3">
               <li><Link to="/" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">About Us</Link></li>
               <li><Link to="/products" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Our Products</Link></li>
               <li><Link to="/certifications" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Certifications</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Contact Us</Link></li>
@@ -41,9 +40,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Company</h4>
             <ul className="space-y-3">
-              <li><Link to="/about?tab=vision" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Vision</Link></li>
-              <li><Link to="/about?tab=goals" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Goals</Link></li>
-              <li><Link to="/about?tab=board" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Board of Directors</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">About Us</Link></li>
+              <li><a href="/about#why-arham" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Why Arham?</a></li>
+              <li><a href="/about#capabilities" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Our Capabilities</a></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">Careers</Link></li>
             </ul>
           </div>

@@ -45,7 +45,8 @@ export async function onRequestPost({ request, env }) {
 
     if (!zeptoResponse.ok) {
       const err = await zeptoResponse.text();
-      throw new Error(err);
+      console.error('Zepto API Error:', zeptoResponse.status, err);
+      throw new Error(`Zepto API failed with status ${zeptoResponse.status}: ${err}`);
     }
 
     return new Response(
@@ -53,8 +54,10 @@ export async function onRequestPost({ request, env }) {
       { status: 200 }
     );
   } catch (error) {
+    console.error('Contact form error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: errorMessage }),
       { status: 500 }
     );
   }

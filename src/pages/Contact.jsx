@@ -24,11 +24,20 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await fetch("/contact", {
+      const response = await fetch("/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
       });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        console.error('Server error:', data);
+        toast.error(`Failed: ${data.error || 'Unknown error'}`);
+        return;
+      }
+      
       toast.success('Message sent successfully! We will get back to you soon.');
       setFormData({
         first_name: '',
@@ -38,7 +47,7 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
-      console.error(error);
+      console.error('Fetch error:', error);
       toast.error('Failed to send message. Please try again or mail on info@arhamexp.com.');
     } finally {
       setLoading(false);
