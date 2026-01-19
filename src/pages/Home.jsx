@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen md:pt-0 pt-10">
+    <div className="flex flex-col min-h-screen md:pt-0 pt-20">
       {/* Hero Section */}
       <section className="relative w-full h-screen bg-gradient-to-br from-gray-50 to-gray-200 overflow-hidden flex items-center">
         {/* 3D Background */}
