@@ -53,11 +53,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3 text-sm text-gray-400">
                 <MapPin className="mt-1 flex-shrink-0 text-teal-400" size={18} />
-                <span>123 Business Park, Export Zone,<br />Ahmedabad, Gujarat 380001, India</span>
+                <span>Plot No.: 1203, Phase-3, Vatva GIDC,<br />Ahmedabad, Gujarat - 382445, India.</span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-400">
                 <Phone className="flex-shrink-0 text-teal-400" size={18} />
-                <span>+91 99999 99999</span>
+                <span>+91-7069351205</span>
+              </li>
+              <li className="flex items-center space-x-3 text-sm text-gray-400">
+                <Phone className="flex-shrink-0 text-teal-400" size={18} />
+                <span>+91-8980026561</span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-400">
                 <Mail className="flex-shrink-0 text-teal-400" size={18} />

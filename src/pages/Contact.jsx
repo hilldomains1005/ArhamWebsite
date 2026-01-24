@@ -76,12 +76,17 @@ const Contact = () => {
               <ContactItem 
                 icon={<MapPin className="w-6 h-6 text-teal-600" />}
                 title="Global Headquarters"
-                content={<>123 Business Park, Export Zone,<br />Ahmedabad, Gujarat 380001, India</>}
+                content={<>Plot No.: 1203, Phase-3, Vatva GIDC,<br />Ahmedabad, Gujarat - 382445, India.</>}
               />
               <ContactItem 
                 icon={<Phone className="w-6 h-6 text-purple-600" />}
                 title="Phone"
-                content="+91 99999 99999"
+                content="+91-7069351205"
+              />
+              <ContactItem 
+                icon={<Phone className="w-6 h-6 text-purple-600" />}
+                title="Phone"
+                content="+91-8980026561"
               />
               <ContactItem 
                 icon={<Mail className="w-6 h-6 text-orange-600" />}
