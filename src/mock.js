@@ -53,7 +53,7 @@ export const boardMembers = [
 export const products = [
   {
     id: 1,
-    name: "Microcrystalline Cellulose (MCC)",
+    name: "Microcrystalline Cellulose",
     category: "101, 102, 103, 105, 112",
     industryDetails:[
       { name: "Pharmaceuticals Functional Application", functionalApplication: "<p>Binder / Diluent</p><p>Disintegrant</p><p>Bulking Agent</p><p>Adsorbent/Suspending Agent</p><p>Lubricant/Anti-adherent</p>" },
@@ -62,7 +62,7 @@ export const products = [
   },
   {
     id: 2,
-    name: "Hydroxypropyl Methylcellulose (HPMC)",
+    name: "Hydroxypropyl Methylcellulose",
     category: "E5, E15, K4M, K100M",
     industryDetails:[
       { name: "Pharmaceuticals Functional Application", functionalApplication: "<p>Film Coating Agent</p><p>Controlled / Sustained Release Agent</p><p>Tablet Binding</p><p>Capsule Shells</p><p>Thickening & Suspending</p>" },
@@ -91,7 +91,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "Croscarmellose Sodium (CCS)",
+    name: "Croscarmellose Sodium",
     category: "",
     industryDetails: [
       {

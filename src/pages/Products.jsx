@@ -40,9 +40,9 @@ const Products = () => {
 
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
          <Tabs defaultValue="excipients" className="w-full">
-           <TabsList className="grid w-full max-w-md grid-cols-2">
-             <TabsTrigger value="excipients">Excipients</TabsTrigger>
-             <TabsTrigger value="food-colours">Food Colours</TabsTrigger>
+           <TabsList className="grid w-full max-w-md grid-cols-2 h-auto bg-gray-200 rounded-lg p-1">
+             <TabsTrigger value="excipients" className="text-lg py-4 px-6 font-semibold text-gray-700 hover:text-gray-900 data-[state=active]:bg-teal-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-md transition-all">Excipients</TabsTrigger>
+             <TabsTrigger value="food-colours" className="text-lg py-4 px-6 font-semibold text-gray-700 hover:text-gray-900 data-[state=active]:bg-teal-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-md transition-all">Food Colours</TabsTrigger>
            </TabsList>
 
            <TabsContent value="excipients" className="mt-4">
@@ -65,18 +65,19 @@ const Products = () => {
                     transition={{ delay: index * 0.1 }}
                     className="bg-white rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
                   >
-                    <div className="flex justify-between items-start mb-4">
-                      {product.category &&
-                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 uppercase tracking-wide">
-                          {product.category}
-                        </span>
-                      }
-                      <span className="text-xs text-gray-400 font-mono">{product.cas}</span>
-                    </div>
                     
                     <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 group-hover:text-teal-600 transition-colors">
                       {product.name}
                     </h3>
+                    {
+                      product.category &&
+                      <div className="flex justify-between items-start mb-4">
+                        
+                          <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 uppercase tracking-wide">
+                            {product.category}
+                          </span>
+                      </div>
+                    }
                     <Accordion type="single" collapsible className="mb-4 md:mb-6">
                       {product.industryDetails.map((detail, idx) => (
                         <AccordionItem key={idx} value={`item-${idx}`}>

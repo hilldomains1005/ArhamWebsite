@@ -75,7 +75,7 @@ const Contact = () => {
             <div className="space-y-8">
               <ContactItem 
                 icon={<MapPin className="w-6 h-6 text-teal-600" />}
-                title="Global Headquarters"
+                title="Headquarters"
                 content={<>Plot No.: 1203, Phase-3, Vatva GIDC,<br />Ahmedabad, Gujarat - 382445, India.</>}
               />
               <ContactItem 
@@ -95,11 +95,11 @@ const Contact = () => {
               />
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+            {/* <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                <h3 className="font-bold text-gray-900 mb-2">Business Hours</h3>
                <p className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM (IST)</p>
                <p className="text-gray-600">Sunday: Closed</p>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Contact Form */}
